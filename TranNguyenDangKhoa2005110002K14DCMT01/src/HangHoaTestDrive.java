@@ -5,6 +5,13 @@ import java.util.Scanner;
 
 public class HangHoaTestDrive {
     public static void main(String[] args) throws ParseException {
+        
+        QuanLiHangHoa dsHangHoa = new QuanLiHangHoa();
+        Scanner nhap = InputSupport.nhap;
+        String nhapTiep = null;
+
+        SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
+
         System.out.println("CHUONG TRINH QUAN LI HANG HOA");
 		System.out.println("=============FUNCTION MENU===============");
         System.out.println("1. Them hang hoa");
@@ -14,12 +21,7 @@ public class HangHoaTestDrive {
         System.out.println("5. Xoa hang hoa");
         System.out.println("=========================================");
 
-        QuanLiHangHoa dsHangHoa = new QuanLiHangHoa();
-        Scanner nhap = InputSupport.nhap;
-        String nhapTiep = null;
-
-        SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
-
+        
         //dl cho san
         HangHoa sp1 = new HangThucPham("TP01", "Trung", 12, 10_000, date.parse("12/02/2012"), date.parse("21/05/2012"));
         HangHoa sp2 = new HangThucPham("TP02", "Ca rot", 3, 11_000, date.parse("12/03/2012"), date.parse("10/05/2012"));
