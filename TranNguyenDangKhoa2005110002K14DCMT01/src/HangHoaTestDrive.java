@@ -14,7 +14,7 @@ public class HangHoaTestDrive {
         System.out.println("5. Xoa hang hoa");
         System.out.println("=========================================");
 
-        DSHangHoa dsHangHoa = new DSHangHoa();
+        QuanLiHangHoa dsHangHoa = new QuanLiHangHoa();
         Scanner nhap = InputSupport.nhap;
         String nhapTiep = null;
 
