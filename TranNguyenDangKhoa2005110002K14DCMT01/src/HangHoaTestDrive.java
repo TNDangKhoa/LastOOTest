@@ -46,7 +46,6 @@ public class HangHoaTestDrive {
         System.out.println("Chon tinh nang(1-5): ");
         choice = nhap.nextInt();
         nhap.nextLine();
-        if (choice >= 1 && choice <= 5){
             switch (choice){
                 case 1: 
                 do {
@@ -163,12 +162,13 @@ public class HangHoaTestDrive {
                 dsHangHoa.xoa(delete);
                 dsHangHoa.inDS();
                 break;
-    
+                default:
+                System.out.println("Khong co chuc nang nay!");
+                break;
             }
-        }else{
-            System.out.println("Khong co chuc nang nay!");
+            
         }
         
     }
-}
+
 
