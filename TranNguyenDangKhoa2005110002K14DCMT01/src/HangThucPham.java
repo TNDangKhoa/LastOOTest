@@ -31,7 +31,8 @@ public class HangThucPham extends HangHoa{
 
     @Override
     public String toString() {
-        return "HangThucPham [HSD=" + date.format(NSX) + ", NSX=" + date.format(HSD) + "]" + super.toString();
+        String str = super.toString() + "  " + "NSX: " + date.format(NSX) + "  " + "HSD: " + date.format(HSD);
+        return str;
     }
 
     

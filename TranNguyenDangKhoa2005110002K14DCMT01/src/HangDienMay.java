@@ -37,7 +37,9 @@ public class HangDienMay extends HangHoa{
 
     @Override
     public String toString() {
-        return "HangDienMay [baohanh=" + baohanh + ", congsuat=" + congsuat + "]" +super.toString();
+        String str;
+        str = super.toString() + "  " + "Cong suat: " + congsuat + "  " + "Bao hanh(nam): " + baohanh;
+        return str;
     }
 
     

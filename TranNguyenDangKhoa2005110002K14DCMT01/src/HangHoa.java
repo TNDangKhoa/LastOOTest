@@ -60,8 +60,8 @@ public class HangHoa {
 
     @Override
     public String toString() {
-        return "HangHoa [dongia=" + dongia + ", mahang=" + mahang + ", soluong=" + soluong + ", tenhanghoa="
-                + tenhanghoa + "]";
+        String str = "Ma hang: " + mahang + "  " + "Ten hang: " + tenhanghoa + "  " + "So luong: " + soluong + "  " + "Don gia: " + dongia;
+        return str;
     }
 
     

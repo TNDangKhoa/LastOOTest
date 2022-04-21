@@ -1,8 +1,10 @@
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class HangSanhSu extends HangHoa{
     private Date ngayNhapKho;
     private String nhaSX;
+    SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
     
     public HangSanhSu(String mahang, String tenhanghoa, double soluong, double dongia, Date ngayNhapKho, String nhaSX) {
         super(mahang, tenhanghoa, soluong, dongia);
@@ -28,7 +30,8 @@ public class HangSanhSu extends HangHoa{
 
     @Override
     public String toString() {
-        return "HangSanhSu [ngayNhapKho=" + ngayNhapKho + ", ngayXuatKho=" + nhaSX + "]" + super.toString();
+        String str = super.toString() + "  " + "Ngay nhap kho: " + date.format(ngayNhapKho) + "  " + "Nha SX: " + nhaSX;
+        return str;
     }
 
     
